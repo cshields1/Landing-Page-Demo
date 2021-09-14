@@ -50,7 +50,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  gap: 15%;
+  padding: 2rem 4.5rem;
 }
 
 .hero-content {
@@ -58,7 +59,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .hero button {
@@ -82,14 +83,48 @@ button {
   color: #e5e7eb;
 }
 
-.mst3k {
-  background: black;
+.interests {
+  text-align: center;
+  padding: 1rem 2rem;
 }
 
 .interests h2 {
   font-size: 36px;
   font-weight: extra-bold;
   color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mst3k {
+  background: #1f2937;
+}
+
+.interest {
+  min-width: 150px;
+  flex: 1;
+}
+
+.blockquote {
+  background: #e5e7eb;
+  padding: 4rem 8rem;
+  text-align: center;
+}
+
+.blockquote blockquote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.blockquote cite {
+  font-style: normal;
 }
 
 .cta-container {
@@ -99,26 +134,16 @@ button {
 .cta {
   background: #3882f6;
   color: #f9faf8;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 50vw;
 }
 
 .cta button {
   background: #f9faf8;
   color: #1f2937;
-}
-
-.blockquote {
-  background: #e5e7eb;
-}
-
-.blockquote blockquote {
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 300;
-  color: #1f2937;
-}
-
-.blockquote cite {
-  font-style: normal;
 }
 
 .footer {
@@ -132,9 +157,21 @@ button {
   text-decoration: underline;
 }
 
-img {
-  border: 2px solid black;
-  border-radius: 50%;
+.footer a:hover {
+  color: white;
+  background: rgb(23, 24, 34);
+}
+
+.interest-image {
+  border: 4px solid #1f2937;
+  border-radius: 10px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.hero-image {
   width: 320px;
   height: auto;
+  border: 4px solid #e5e7eb;
+  border-radius: 25%;
 }
